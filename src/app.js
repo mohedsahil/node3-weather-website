@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 const app = express()
+const port = process.env.PORT||3000
 const geocode = require('./utilits/geocode')
 const forecast = require('./utilits/forecast')
 //defining paths for express 
@@ -73,6 +74,10 @@ app.get('*',(req,res)=>{
       'errormessage':'page not found'
   })
 })
+//local host
+// app.listen(3000,()=>{
+//     console.log('server has fire up')
+// })
 app.listen(3000,()=>{
-    console.log('server has fire up')
+
 })
