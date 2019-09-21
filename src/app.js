@@ -78,6 +78,6 @@ app.get('*',(req,res)=>{
 // app.listen(3000,()=>{
 //     console.log('server has fire up')
 // })
-app.listen(3000,()=>{
-
+app.listen(port,()=>{
+    console.log('server has fire up')
 })
