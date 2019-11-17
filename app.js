@@ -3,12 +3,12 @@ const path = require('path')
 const hbs = require('hbs')
 const app = express()
 const port = process.env.PORT||3000
-const geocode = require('./utilits/geocode')
-const forecast = require('./utilits/forecast')
+const geocode = require('/utilits/geocode')
+const forecast = require('/utilits/forecast')
 //defining paths for express 
-const publicdirectorypath = path.join(__dirname,'../public')
-const viewspath = path.join(__dirname,'../templates/views')
-const partialpaths = path.join(__dirname,'../templates/partials')
+const publicdirectorypath = path.join(__dirname,'/public')
+const viewspath = path.join(__dirname,'/templates/views')
+const partialpaths = path.join(__dirname,'/templates/partials')
 
 app.set('view engine','hbs')
 //point express to custom template directory
