@@ -1,5 +1,5 @@
 ---
 applications:
-- name: weatherapp
+- name: web-server
   memory: 64m
   instances: 1
