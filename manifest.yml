@@ -1,0 +1,5 @@
+---
+applications:
+- name: weatherapp
+  memory: 64m
+  instances: 1
